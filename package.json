@@ -10,7 +10,7 @@
   "author": "Bhagirathsinh Zala",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.0.0-beta.1",
+    "parcel-bundler": "^1.12.5",
     "sass": "^1.26.10"
   },
   "dependencies": {
