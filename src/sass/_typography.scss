@@ -1,0 +1,45 @@
+.large-heading {
+  font-size: 5rem;
+  font-family: $primaryFont;
+
+  @include respond(tab-portrait) {
+    font-size: 4.5rem;
+  }
+
+  @include respond(phone) {
+    font-size: 3.7rem;
+  }
+}
+
+.small-heading {
+  font-size: 1.8rem;
+  color: $textColorSecondary;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.medium-heading {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.highlight {
+  color: $highlightColor;
+}
+
+.testimonial {
+  line-height: 1.6;
+  font-size: 1.4rem;
+}
+
+.main-para {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}

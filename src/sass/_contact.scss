@@ -1,0 +1,80 @@
+.contactBg {
+  background: $bgColorPrimary;
+}
+
+.contact {
+  &__text {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    @include respond(phone) {
+      width: 80%;
+    }
+  }
+
+  &__form {
+    margin: 6rem auto 2rem auto;
+    width: 60%;
+    @include respond(phone) {
+      width: 80%;
+    }
+
+    &--container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin: 1.5rem 0;
+      @include respond(tab-portrait) {
+        font-size: 1.3rem;
+      }
+      &:nth-of-type(2) input {
+        width: 100%;
+      }
+
+      input {
+        background-color: $bgColorSecondary;
+        outline: none;
+        padding: 1.2rem 2rem;
+        display: block;
+        width: 48%;
+        font-family: inherit;
+        border: 1px solid $bgColorSecondary;
+        @include respond(tab-portrait) {
+          font-size: 1.4rem;
+        }
+      }
+
+      textarea {
+        background-color: $bgColorSecondary;
+        width: 100%;
+        padding: 1.2rem 2rem;
+        font-family: inherit;
+        outline: none;
+        border: none;
+        @include respond(tab-portrait) {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    button {
+      font-family: inherit;
+      margin: 0 auto;
+      font-size: 1.4rem;
+
+      display: block;
+      padding: 1.2rem 3.5rem;
+      border-radius: 5px;
+      outline: none;
+      border: none;
+      letter-spacing: 1px;
+      background: $highlightColor;
+      color: #fff;
+
+      &:hover {
+        cursor: pointer;
+        background-color: darken($highlightColor, $amount: 1.7);
+      }
+    }
+  }
+}

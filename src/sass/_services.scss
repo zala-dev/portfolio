@@ -1,0 +1,52 @@
+.service {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 125rem;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    margin-bottom: 6rem;
+    text-align: center;
+    width: 40%;
+    @include respond(phone) {
+      width: 80%;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: $bgColorPrimary;
+    border-radius: 5px;
+    padding: 3rem;
+    width: 25rem;
+    height: 20rem;
+    text-align: center;
+    transition: box-shadow 0.5s;
+
+    p {
+      font-size: 1.4rem;
+      line-height: 21.6px;
+    }
+
+    i {
+      font-size: 3.5rem;
+      margin-bottom: 1.2rem;
+      color: $highlightColor;
+    }
+  }
+  &__card:hover {
+    // transform: translateY(-0.5rem);
+    box-shadow: $box-shadow-primary;
+  }
+}
